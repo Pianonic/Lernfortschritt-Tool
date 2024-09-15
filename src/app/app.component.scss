@@ -1,0 +1,35 @@
+.nav-items{
+    margin-left: 20px;
+    display: flex;
+    align-items: start;
+}
+
+c-header{
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    user-select: none
+}
+
+.nav-items{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page{
+    margin: 15px;
+    height: calc(100vh - 109px);
+}
+
+.spppacc{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}

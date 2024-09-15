@@ -1,0 +1,30 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    border: 2px solid rgba(0, 0, 0, 0.253);
+    padding: 8px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.controll-elements{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.important-elements{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    .input-small{
+        width: 90px;
+    }
+    .input-big{
+        width: 120px;
+    }
+}

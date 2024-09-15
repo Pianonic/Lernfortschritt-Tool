@@ -1,0 +1,91 @@
+.sections{
+    display: flex;
+    height: 100%;
+}
+
+.main{
+    flex-grow: 1;
+}
+
+.sides{
+    flex-grow: 1;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    padding: 1rem;
+    border: 1px solid #dee2e6;
+    border-radius: 1rem;
+}
+
+.a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    user-select: none
+}
+
+.selected-a{
+    color: black;
+    font-size: 20px;
+    text-decoration: underline;
+    user-select: none
+}
+
+.mode-choose{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.save-button-alignment{
+    display: flex;
+    justify-content: end;
+}
+
+.save-button{
+    margin-top: 15px;
+}
+
+// Table stuff
+th.center-align {
+    text-align: center;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr {
+    border-bottom: 1px solid #ccc; 
+}
+
+table th, table td {
+    padding: 8px;
+}
+
+.rating {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.rating svg {
+    cursor: pointer;
+    fill: lightgray;
+    transition: fill 0.3s ease, transform 0.3s ease;
+}
+
+.rating svg.filled {
+    fill: gold;
+}
+
+.rating span:focus-within svg {
+    fill: gold;
+}
+  

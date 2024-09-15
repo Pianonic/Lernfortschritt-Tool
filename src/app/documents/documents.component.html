@@ -1,0 +1,25 @@
+<div class="sections">
+    <div class="sides"></div>
+    <div class="main"> 
+        
+        <h1 class="centered-text">Modul 319: Applikationen entwerfen und implementieren</h1>
+        <div class="mode-choose">
+            <a href="" routerLink="/M319/Documents" class="selected-a">Dokumente</a>
+            <a href="" routerLink="/M319/LearningProgress/Rating" class="a">Lernfortschritt</a>
+        </div>
+        <div class="content">
+            <c-card *ngFor="let file of files">
+                <c-card-body>
+                  <div class="file-and-text">
+                    <img src="./file_icon.webp" height="40px" width="40px">
+                    <h3>{{ file.split('/').pop() }}</h3>
+                  </div>
+                  <a [href]="basePath + file">
+                    <button cButton color="primary">Download</button>
+                  </a>
+                </c-card-body>
+            </c-card>
+        </div>
+    </div>
+    <div class="sides"></div>
+</div> 

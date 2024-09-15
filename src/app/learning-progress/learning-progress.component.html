@@ -1,0 +1,51 @@
+<div class="sections">
+    <div class="sides"></div>
+    <div class="main"> 
+        
+        <h1 class="centered-text">Modul 319: Applikationen entwerfen und implementieren</h1>
+        <div class="mode-choose">
+            <a href="" routerLink="/M319/Documents" class="a">Dokumente</a>
+            <a href="" routerLink="/M319/LearningProgress/Rating" class="selected-a">Lernfortschritt</a>
+        </div>
+        <div class="content">
+            <table cTable>
+                <thead>
+                  <tr>
+                    <th>Leistungsziel</th>
+                    <th class="center-align">Rating</th> 
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let item of items">
+                    <td>{{ item.text }}</td>
+                    <td>
+                      <div class="rating">
+                        <span *ngFor="let star of stars; let i = index" 
+                              tabindex="0" 
+                              (click)="rate(item, i + 1)" 
+                              (keydown)="handleKeydown($event, item, i + 1)">
+                          <svg
+                            [ngClass]="{'filled': i < item.rating, 'empty': i >= item.rating}"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width="24"
+                            height="24"
+                            [attr.aria-label]="'Star rating ' + (i + 1)"
+                          >
+                            <path
+                              d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.897l-7.334 3.868 1.4-8.168L.132 9.21l8.2-1.192z"
+                            />
+                          </svg>
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>          
+              <div class="save-button-alignment">
+                  <button cButton color="primary" class="save-button" routerLink="/M319/LearningProgress/Planing">Speichern</button>
+              </div> 
+        </div>
+    </div>
+    <div class="sides"></div>
+</div> 

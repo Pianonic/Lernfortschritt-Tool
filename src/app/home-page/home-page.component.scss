@@ -1,0 +1,28 @@
+.sections{
+    display: flex;
+    height: 100%;
+}
+
+.main{
+    flex-grow: 1;
+}
+
+.sides{
+    flex-grow: 1;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+.last-visited-area{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+}
+
+.cards{
+    width: 450px;
+}
